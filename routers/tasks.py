@@ -13,7 +13,7 @@ router = APIRouter(prefix="/tasks", tags=["Tasks"])
 class Priority(str, Enum):
     LOW = "LOW"
     MEDIUM = "MEDIUM"
-    HIGH = "HIGH"
+    HIGH = "HIGH" # priority for branch
 
 class TaskCreate(BaseModel):
     title: str
